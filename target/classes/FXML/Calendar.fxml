@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fasting.tracker.controller.HomeController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="Background" fitHeight="800.0" fitWidth="1300.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Calendar.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="169.0" prefHeight="645.0" prefWidth="171.0" />
+            <AnchorPane layoutX="159.0" layoutY="133.0" prefHeight="675.0" prefWidth="1141.0">
+               <children>
+                  <Text fx:id="Month" fill="GREY" layoutX="1.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month" textAlignment="CENTER" wrappingWidth="801.7294921875">
+                     <font>
+                        <Font size="55.0" />
+                     </font>
+                  </Text>
+                  <GridPane fx:id="Grid" alignment="CENTER" layoutX="-2.0" layoutY="129.0" prefHeight="530.0" prefWidth="808.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #c2b5b5;" text="Mon" textAlignment="CENTER" textFill="GREY">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #c2b5b5;" text="Wed" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="125.0" layoutY="10.0" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #c2b5b5;" text="Tue" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="125.0" layoutY="10.0" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #c2b5b5;" text="Thu" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="355.0" layoutY="10.0" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #c2b5b5;" text="Fri" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="470.0" layoutY="10.0" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #c2b5b5;" text="Sat" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="584.0" layoutY="10.0" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #c2b5b5;" text="Sun" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="number1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMousePressed="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="1" textAlignment="CENTER" textFill="GREY" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number2" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onMousePressed="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="2" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number3" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="102.0" mnemonicParsing="false" onMousePressed="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="3" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number4" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="102.0" mnemonicParsing="false" onMousePressed="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="4" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number5" alignment="CENTER" contentDisplay="CENTER" layoutX="355.0" layoutY="102.0" mnemonicParsing="false" onMousePressed="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="5" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number6" alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="102.0" mnemonicParsing="false" onMousePressed="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="6" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number7" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="102.0" mnemonicParsing="false" onMousePressed="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="7" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number8" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="8" textAlignment="CENTER" textFill="GREY" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number9" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="194.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="9" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number10" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="194.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="10" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number11" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="194.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="11" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number12" alignment="CENTER" contentDisplay="CENTER" layoutX="355.0" layoutY="194.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="12" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number13" alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="194.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="13" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number14" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="14" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number15" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="378.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="15" textAlignment="CENTER" textFill="GREY" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="one11111111number1" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="16" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number17" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="17" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number18" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="18" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number19" alignment="CENTER" contentDisplay="CENTER" layoutX="355.0" layoutY="378.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="19" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number20" alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="378.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="20" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number21" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="21" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number22" alignment="CENTER" contentDisplay="CENTER" layoutX="698.0" layoutY="194.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="22" textAlignment="CENTER" textFill="GREY" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number23" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="23" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number24" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="378.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="24" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number25" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="378.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="25" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number26" alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="26" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="numer27" alignment="CENTER" contentDisplay="CENTER" layoutX="698.0" layoutY="286.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="27" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number28" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="378.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="28" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number29" alignment="CENTER" contentDisplay="CENTER" layoutX="698.0" layoutY="378.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="29" textAlignment="CENTER" textFill="GREY" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number30" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="470.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="30" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number31" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="470.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="31" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number32" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="470.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="115.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="32" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number33" alignment="CENTER" contentDisplay="CENTER" layoutX="355.0" layoutY="470.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="33" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number34" alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="470.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="34" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number35" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="470.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="35" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number291" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="383.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="36" textAlignment="CENTER" textFill="GREY" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number2911" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="458.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="37" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number29111" alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="458.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="38" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number291111" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="458.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="39" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number2911111" alignment="CENTER" contentDisplay="CENTER" layoutX="358.0" layoutY="458.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="40" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number29111111" alignment="CENTER" contentDisplay="CENTER" layoutX="473.0" layoutY="458.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="41" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="number291111111" alignment="CENTER" contentDisplay="CENTER" layoutX="588.0" layoutY="458.0" mnemonicParsing="false" onAction="#onCalendar" prefHeight="92.0" prefWidth="167.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-border: none;" text="42" textAlignment="CENTER" textFill="GREY" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <TextField fx:id="WeightField" alignment="CENTER" layoutX="833.0" layoutY="192.0" prefHeight="50.0" prefWidth="270.0" text="No Data" />
+                  <Text fx:id="Fasting" fill="GREY" layoutX="835.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fast" textAlignment="CENTER" wrappingWidth="266.31396484375">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="CaloriesField" alignment="CENTER" layoutX="833.0" layoutY="288.0" prefHeight="50.0" prefWidth="270.0" text="No Data" />
+                  <TextField fx:id="WeightMovedField" alignment="CENTER" layoutX="836.0" layoutY="394.0" prefHeight="50.0" prefWidth="270.0" text="No Data" />
+                  <TextField fx:id="MealsField" alignment="CENTER" layoutX="837.0" layoutY="492.0" prefHeight="50.0" prefWidth="270.0" text="No Data" />
+                  <Text fill="GREY" layoutX="816.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please click a date" textAlignment="CENTER" wrappingWidth="309.91015625">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="SaveChanges" layoutX="830.0" layoutY="588.0" mnemonicParsing="false" onMousePressed="#SaveChanges" prefHeight="30.0" prefWidth="276.0" style="-fx-background-color: #e68370;" text="SAVE CHANGES" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="-1.0" layoutY="176.0" prefHeight="627.0" prefWidth="159.0">
+               <children>
+                  <Button fx:id="Home" mnemonicParsing="false" onAction="#onaction" prefHeight="150.0" prefWidth="168.0" style="-fx-background-color: transparent; -fx-text-fill: transparent;" text="Button" />
+                  <Button fx:id="Calendar" mnemonicParsing="false" onAction="#onaction" prefHeight="160.0" prefWidth="168.0" style="-fx-background-color: transparent; -fx-text-fill: transparent;" text="Button" />
+                  <Button fx:id="Meals" mnemonicParsing="false" onAction="#onaction" prefHeight="150.0" prefWidth="168.0" style="-fx-background-color: transparent; -fx-text-fill: transparent;" text="Button" />
+                  <Button fx:id="Exercises" layoutX="10.0" layoutY="320.0" mnemonicParsing="false" onAction="#onaction" prefHeight="150.0" prefWidth="168.0" style="-fx-background-color: transparent; -fx-text-fill: transparent;" text="Button" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
