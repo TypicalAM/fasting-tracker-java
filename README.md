@@ -23,7 +23,8 @@ Intermittent fasting is a process where one abstains from eating for certain tim
   - Addition, removal or modification of different meals and exercises
  
 ## Technologies
-- **Build using Java**
+- **Built using Java**
+
   - Maven
   - Embedded Derby JDBC connection
   - JavaFX controllers
