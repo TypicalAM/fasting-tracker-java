@@ -1,6 +1,6 @@
 # Fasting tracker
 
-<p allign="center"> ![image](https://user-images.githubusercontent.com/50233321/129686431-234bedb2-edc3-40f0-8fc6-9e4f73dde648.png)</p>
+<p align="center"><img src=https://user-images.githubusercontent.com/50233321/129686431-234bedb2-edc3-40f0-8fc6-9e4f73dde648.png></p>
 
 ## Introduction and purpose
 
