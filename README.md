@@ -20,17 +20,18 @@ Intermittent fasting is a process where one abstains from eating for certain tim
   - Modification of data at will via the interface (for weight and calorie tracking)
 
 - **Exercise and meal sections**
-  - Addition, removal or modification of different meals and exercises.
+  - Addition, removal or modification of different meals and exercises
  
-## Design phase
+## Technologies
+- **Build using Java**
+  - Maven
+  - Embedded Derby JDBC connection
+  - JavaFX controllers
+  - Scenebuiler XML layouts
 
-This is what the product was intended to look like as a rough draft.
+## Product
 
-![obraz](https://user-images.githubusercontent.com/50233321/129685794-1116d724-edd6-4727-8805-d904f0ec7b4c.png)
-
-## Basic meals scene
-
-This is one of the scenes of the finished product that is in the repository
+This is one of the scenes (the meals section covered before) that are included.
 
 ![obraz](https://user-images.githubusercontent.com/50233321/129686815-84cc191a-c430-4892-b05d-be023309873b.png)
 
